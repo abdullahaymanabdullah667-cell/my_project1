@@ -1,0 +1,184 @@
+
+:root{
+  --bg: #f6f0e6;        
+  --card: #ffffff;
+  --accent: #0b6b3a;    
+  --gold: #c49a2d;       
+  --navy: #123042;       
+  --muted: #6b6b6b;
+  --hadith1: #d97706;    
+  --hadith2: #0ea5a4;   
+  --hadith3: #7c3aed;   
+  --hadith4: #d97706;
+  --hadith5: #0ea5a4;    
+  --web:#ccc7bd; 
+
+}
+
+/* قواعد عامة */
+html,body{
+  height:100%
+}
+
+body{
+  margin:0;
+  font-family: "Cairo", system-ui, sans-serif;
+  background: linear-gradient(180deg, var(--bg), #f3efe8 60%);
+  color:#111;
+  
+}
+
+/* الهيدر */
+.har{
+  background: linear-gradient(100deg, rgba(146, 252, 197, 0.95), rgba(55, 111, 147, 0.9));
+  color: #fff;
+  padding: 56px 1px 56px 1px;
+  text-align:center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+.har-inner{
+  max-width:1100px;
+  margin:0 auto
+}
+.hero .no-tashkeel{
+
+  margin:1px;
+  font-weight:900;
+  letter-spacing:2px;
+  font-family: "Amiri", serif;
+}
+h1 .no-tashkeel :hover {
+  background-color: #160596;
+  
+}
+.hero .tashkeel{
+  font-size: clamp(34px, 8vw, 72px);
+  margin:6px 0 0;
+  font-weight:700;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+  font-family: "Amiri", serif; /* لظهور التشكيل جميل */
+}
+
+/* الحاوية الرئيسية */
+.container{
+  max-width:1100px;
+  margin:-40px auto 60px;
+  padding:1rem;
+  display:grid;
+  gap:18px;
+  
+}
+
+/* كروت المحتوى */
+.card{
+  background:var(--card);
+  border-radius:15px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  border-left:6px solid var(--accent);
+}
+.card h3{
+  margin:0 0 10px;
+  font-size:20px;
+  color:var(--navy)
+}
+
+/* الجداول */
+.table-wrap{
+  margin-top:12px
+}
+.stages{
+  width:100%;
+  font-size:15px;
+}
+.stages thead th{
+  text-align:right;
+  background:linear-gradient(90deg, rgba(196,154,45,0.12), transparent);
+  padding:8px 12px;
+  color:var(--navy);
+  border-bottom:2px solid rgba(0,0,0,0.05);
+}
+.stages td{
+  padding:10px 12px;
+  border-bottom:1px solid #eee;
+  text-align:right;
+}
+
+/* نقاط */
+.bullets{
+  padding-inline-start:1.2rem;
+  margin:8px 0;
+}
+.bullets li{
+  margin:6px 0
+}
+
+/* الأحاديث الجانبية */
+.aside-hadiths{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:12px;
+}
+#pp , #ff {
+  font-size: large;
+}
+.hadith, .you{
+  flex:1 1 160px;
+  padding:10px;
+  border-radius:10px;
+  color:#fff;
+  font-weight:700;
+  font-size:14px;
+  text-align:center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+.hadith1{background:var(--hadith1)}
+.hadith2{background:var(--hadith2)}
+.hadith3{background:var(--hadith3)}
+.hadith4{background:var(--hadith4)}
+.hadith5{background:var(--hadith5)}
+
+/* الاقتباس النهائي */
+.final-quote{
+  margin-top:14px;
+  padding:12px;
+  background: linear-gradient(90deg, rgba(11,107,58,0.05), rgba(196,154,45,0.03));
+  border-radius:8px;
+  border-left:4px solid var(--gold);
+  font-weight:700;
+  font-family: "Amiri", serif;
+  color:var(--navy);
+}
+
+/* الفوتر */
+.footer{
+  text-align:center;
+  padding:18px 10px;
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* استجابة */
+
+.container {
+    grid-template-columns: 1fr 360px;
+}
+.aside-hadiths {
+    flex-direction:column
+}
+
+.IT {
+  width: 300px; height: auto; border-radius: 8px;
+}
+.web {
+  padding: 30px;
+  background-color: var(--web);
+  overflow: visible;
+  width: 240px;
+  border-radius: 7px;
+  word-spacing: 3px;
+  font-family: "Amiri", serif,system-ui, sans-serif;
+  font-size: large;
+  margin-bottom: 100px;
+}
